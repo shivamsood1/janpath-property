@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prime Commercial Asset — Janpath, Connaught Place, New Delhi</title>
-<meta name="description" content="Rare freehold commercial building on Janpath Road, Connaught Place. G+4+Terrace, ~40,000 sq ft, fully leased to international tenants. Transaction-ready.">
+<title>Prime Commercial Asset, Janpath, Connaught Place, New Delhi</title>
+<meta name="description" content="Rare freehold commercial building on Janpath Road, Connaught Place. G+3+Terrace, ~40,000 sq ft, fully leased to international tenants. Transaction-ready. Exclusively marketed by Hacoco.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
     --sand: #F5F0E8;
     --warm-white: #FDFBF7;
-    --terracotta: #C4724A;
-    --terracotta-light: #E8B89A;
-    --dark: #1A1714;
-    --mid: #6B6560;
-    --light-border: rgba(26,23,20,0.12);
+    --terracotta: #B5612A;
+    --terracotta-light: #E0A07A;
+    --dark: #0F0D0B;
+    --mid: #3D3830;
+    --light-border: rgba(15,13,11,0.14);
     --serif: 'Cormorant Garamond', Georgia, serif;
     --sans: 'DM Sans', system-ui, sans-serif;
   }
@@ -44,14 +44,14 @@
     justify-content: space-between;
     padding: 0 40px;
     height: 64px;
-    background: rgba(253,251,247,0.92);
+    background: rgba(253,251,247,0.95);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--light-border);
   }
   .nav-logo {
     font-family: var(--serif);
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--dark);
@@ -65,7 +65,7 @@
     color: #fff;
     font-family: var(--sans);
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.04em;
     padding: 10px 20px;
     border-radius: 4px;
@@ -91,12 +91,12 @@
     width: 100%; height: 100%;
     object-fit: cover;
     object-position: center 30%;
-    filter: brightness(0.72);
+    filter: brightness(0.65);
   }
   .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(20,16,12,0.88) 0%, rgba(20,16,12,0.2) 55%, transparent 100%);
+    background: linear-gradient(to top, rgba(10,8,6,0.92) 0%, rgba(10,8,6,0.25) 55%, transparent 100%);
   }
   .hero-content {
     position: relative;
@@ -107,28 +107,40 @@
   .hero-label {
     font-family: var(--sans);
     font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.16em;
+    font-weight: 600;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--terracotta-light);
     margin-bottom: 20px;
   }
   .hero-title {
     font-family: var(--serif);
-    font-size: clamp(42px, 6vw, 80px);
-    font-weight: 300;
+    font-size: clamp(44px, 6vw, 82px);
+    font-weight: 500;
     line-height: 1.05;
     color: #fff;
     margin-bottom: 24px;
   }
   .hero-title em { font-style: italic; color: var(--terracotta-light); }
   .hero-sub {
-    font-size: 16px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.72);
-    max-width: 480px;
-    line-height: 1.7;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.85);
+    max-width: 500px;
+    line-height: 1.75;
   }
+  .hero-hacoco {
+    position: absolute;
+    bottom: 28px;
+    right: 48px;
+    z-index: 3;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+  .hero-hacoco span { color: rgba(255,255,255,0.85); }
 
   /* STATS BAR */
   .stats-bar {
@@ -143,22 +155,23 @@
   .stat:last-child { border-right: none; }
   .stat-label {
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.45);
     margin-bottom: 8px;
   }
   .stat-value {
     font-family: var(--serif);
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 26px;
+    font-weight: 500;
     color: #fff;
     line-height: 1.1;
   }
   .stat-sub {
     font-size: 11px;
-    color: rgba(255,255,255,0.4);
+    font-weight: 400;
+    color: rgba(255,255,255,0.45);
     margin-top: 4px;
   }
 
@@ -166,7 +179,7 @@
   section { padding: 100px 60px; }
   .section-label {
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--terracotta);
@@ -174,15 +187,15 @@
   }
   .section-title {
     font-family: var(--serif);
-    font-size: clamp(32px, 4vw, 52px);
-    font-weight: 300;
+    font-size: clamp(34px, 4vw, 54px);
+    font-weight: 500;
     line-height: 1.15;
     color: var(--dark);
     margin-bottom: 32px;
   }
   .section-body {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 17px;
+    font-weight: 400;
     color: var(--mid);
     line-height: 1.85;
     max-width: 640px;
@@ -242,23 +255,23 @@
   .highlight-num {
     font-family: var(--serif);
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--terracotta);
     margin-bottom: 16px;
   }
   .highlight-heading {
     font-family: var(--serif);
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 500;
     color: var(--dark);
     margin-bottom: 12px;
     line-height: 1.3;
   }
   .highlight-text {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
     color: var(--mid);
-    line-height: 1.75;
+    line-height: 1.8;
   }
 
   /* LOCATION */
@@ -272,7 +285,7 @@
   }
   .location-section .section-label { color: var(--terracotta-light); }
   .location-section .section-title { color: #fff; }
-  .location-section .section-body { color: rgba(255,255,255,0.56); max-width: none; }
+  .location-section .section-body { color: rgba(255,255,255,0.68); max-width: none; }
   .location-tags {
     display: flex;
     flex-wrap: wrap;
@@ -281,10 +294,10 @@
   }
   .location-tag {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.06em;
-    color: rgba(255,255,255,0.6);
-    border: 1px solid rgba(255,255,255,0.16);
+    color: rgba(255,255,255,0.65);
+    border: 1px solid rgba(255,255,255,0.18);
     padding: 7px 16px;
     border-radius: 2px;
   }
@@ -303,7 +316,7 @@
   .form-field { display: flex; flex-direction: column; gap: 6px; }
   .form-field label {
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--mid);
@@ -312,12 +325,12 @@
   .form-field select,
   .form-field textarea {
     font-family: var(--sans);
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     color: var(--dark);
     background: transparent;
     border: none;
-    border-bottom: 1px solid var(--light-border);
+    border-bottom: 1.5px solid var(--light-border);
     padding: 12px 0;
     outline: none;
     transition: border-color 0.2s;
@@ -337,10 +350,10 @@
     background: var(--dark);
     color: #fff;
     font-family: var(--sans);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    padding: 16px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 18px 40px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -358,10 +371,10 @@
     background: transparent;
     color: var(--dark);
     font-family: var(--sans);
-    font-size: 14px;
-    font-weight: 400;
-    padding: 14px 40px;
-    border: 1px solid var(--light-border);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 16px 40px;
+    border: 1.5px solid var(--light-border);
     border-radius: 3px;
     cursor: pointer;
     text-decoration: none;
@@ -374,7 +387,7 @@
   .info-block { margin-bottom: 40px; }
   .info-block-label {
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--terracotta);
@@ -382,22 +395,54 @@
   }
   .info-block-value {
     font-family: var(--serif);
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 500;
     color: var(--dark);
     line-height: 1.4;
   }
   .info-block-sub {
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 400;
     color: var(--mid);
-    margin-top: 4px;
+    margin-top: 6px;
+    line-height: 1.65;
   }
   .disclaimer {
-    font-size: 11px;
-    color: rgba(107,101,96,0.7);
-    line-height: 1.7;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(61,56,48,0.65);
+    line-height: 1.75;
     margin-top: 20px;
   }
+
+  /* HACOCO STRIP */
+  .hacoco-strip {
+    background: var(--sand);
+    border-top: 1px solid var(--light-border);
+    border-bottom: 1px solid var(--light-border);
+    padding: 28px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+  }
+  .hacoco-strip p {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: var(--mid);
+    text-transform: uppercase;
+  }
+  .hacoco-strip a {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    text-decoration: none;
+  }
+  .hacoco-strip a:hover { text-decoration: underline; }
 
   /* FOOTER */
   footer {
@@ -410,15 +455,17 @@
   }
   footer p {
     font-size: 12px;
-    color: rgba(255,255,255,0.36);
+    font-weight: 400;
+    color: rgba(255,255,255,0.38);
   }
   footer a {
-    color: rgba(255,255,255,0.36);
+    color: rgba(255,255,255,0.38);
     text-decoration: none;
   }
   footer a:hover { color: rgba(255,255,255,0.7); }
   .rera-badge {
     font-size: 11px;
+    font-weight: 500;
     color: rgba(255,255,255,0.4);
     border: 1px solid rgba(255,255,255,0.12);
     padding: 6px 14px;
@@ -430,7 +477,7 @@
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(10,8,6,0.95);
+    background: rgba(8,6,4,0.96);
     z-index: 999;
     align-items: center;
     justify-content: center;
@@ -458,11 +505,13 @@
   @media (max-width: 768px) {
     nav { padding: 0 20px; }
     .hero-content { padding: 0 24px 40px; }
-    .hero-title { font-size: 38px; }
+    .hero-hacoco { right: 24px; bottom: 20px; }
+    .hero-title { font-size: 40px; }
     .stats-bar { grid-template-columns: 1fr 1fr; }
     .stat:nth-child(5) { grid-column: span 2; border-right: none; }
     section { padding: 72px 24px; }
     .gallery-section { padding: 72px 24px; }
+    .hacoco-strip { padding: 24px 24px; flex-direction: column; gap: 8px; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .gallery-grid { grid-template-columns: 1fr 1fr; }
     .gallery-grid .wide { grid-column: span 2; }
@@ -490,10 +539,11 @@
   <img class="hero-img" src="JP3.jpeg" alt="Prime commercial building, Janpath, Connaught Place, New Delhi">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="hero-label">Rare Freehold Opportunity &mdash; Connaught Place, New Delhi</p>
+    <p class="hero-label">Rare Freehold Opportunity &nbsp; Connaught Place, New Delhi</p>
     <h1 class="hero-title">A landmark<br>on <em>Janpath</em>.</h1>
-    <p class="hero-sub">G+4+Terrace commercial building. ~40,000 sq ft. Fully leased. Original family ownership. Transaction-ready title.</p>
+    <p class="hero-sub">G+3+Terrace commercial building. ~40,000 sq ft. Fully leased. Original family ownership. Transaction-ready title.</p>
   </div>
+  <p class="hero-hacoco">Exclusively marketed by <span>Hacoco</span></p>
 </section>
 
 <!-- STATS BAR -->
@@ -505,8 +555,8 @@
   </div>
   <div class="stat">
     <div class="stat-label">Structure</div>
-    <div class="stat-value">G+4+T</div>
-    <div class="stat-sub">Ground + 4 Floors + Terrace</div>
+    <div class="stat-value">G+3+T</div>
+    <div class="stat-sub">Ground, 3 Floors and Terrace</div>
   </div>
   <div class="stat">
     <div class="stat-label">Ownership</div>
@@ -520,7 +570,7 @@
   </div>
   <div class="stat">
     <div class="stat-label">Lease Expiry</div>
-    <div class="stat-value">2027–32</div>
+    <div class="stat-value">2027 to 32</div>
     <div class="stat-sub">Staggered long-term leases</div>
   </div>
 </div>
@@ -532,10 +582,10 @@
       <p class="section-label">The Asset</p>
       <h2 class="section-title">Irreplaceable address.<br>Institutional quality.</h2>
       <p class="section-body">
-        This property sits at the heart of Connaught Place — New Delhi's most sought-after commercial precinct and one of the highest-value commercial corridors in India. A substantial G+4 building with terrace rights, the property spans approximately 40,000 square feet across six usable levels, with a frontage facing Janpath Road.
+        This property sits at the heart of Connaught Place, New Delhi's most sought-after commercial precinct and one of the highest-value commercial corridors in India. A substantial G+3 building with terrace rights, the property spans approximately 40,000 square feet across five usable levels, with a frontage facing Janpath Road.
       </p>
       <p class="section-body" style="margin-top: 20px;">
-        The building is fully leased to international tenants with staggered lease expiries running from 2027 through 2032, providing stable income visibility through transition. Title papers are clear with no conflict — the property has been in original family ownership since construction, making this a rare, direct-from-owner transaction.
+        The building is fully leased to international tenants with staggered lease expiries running from 2027 through 2032, providing stable income visibility through transition. Title papers are clear with no conflict. The property has been in original family ownership since construction, making this a rare, direct-from-owner transaction with no broker chain.
       </p>
     </div>
     <div class="about-right">
@@ -570,28 +620,28 @@
     </div>
     <div class="highlight-item">
       <div class="highlight-num">02</div>
-      <div class="highlight-heading">Connaught Place — first ring</div>
+      <div class="highlight-heading">Connaught Place, first ring</div>
       <div class="highlight-text">Janpath Road is Connaught Place's most active commercial spine. Supply of full-building freehold assets here is structurally near-zero. This is a once-in-a-generation acquisition opportunity.</div>
     </div>
     <div class="highlight-item">
       <div class="highlight-num">03</div>
       <div class="highlight-heading">100% leased, zero downtime risk</div>
-      <div class="highlight-text">Fully occupied with international-grade tenants. Rental income from day one of acquisition. Lease expiries running to 2032 provide the new owner a clear runway.</div>
+      <div class="highlight-text">Fully occupied with international-grade tenants. Rental income from day one of acquisition. Lease expiries running to 2032 give the new owner a clear runway.</div>
     </div>
     <div class="highlight-item">
       <div class="highlight-num">04</div>
-      <div class="highlight-heading">~40,000 sq ft across six levels</div>
-      <div class="highlight-text">Ground, first, second, third, fourth floors plus terrace — a substantial built-up footprint in a micro-market where individual floors routinely transact at significant premiums.</div>
+      <div class="highlight-heading">~40,000 sq ft across five levels</div>
+      <div class="highlight-text">Ground, first, second, third floor plus terrace. A substantial built-up footprint in a micro-market where individual floors routinely transact at significant premiums.</div>
     </div>
     <div class="highlight-item">
       <div class="highlight-num">05</div>
       <div class="highlight-heading">Janpath Road frontage</div>
-      <div class="highlight-text">Direct facing to Janpath Road provides exceptional visibility and vehicular access — a fundamental asset attribute that cannot be replicated by interior or service-lane properties.</div>
+      <div class="highlight-text">Direct frontage to Janpath Road provides exceptional visibility and vehicular access. A fundamental asset attribute that cannot be replicated by interior or service-lane properties.</div>
     </div>
     <div class="highlight-item">
       <div class="highlight-num">06</div>
       <div class="highlight-heading">Terrace rights included</div>
-      <div class="highlight-text">Terrace rights transfer with the property — an increasingly rare commodity in CP that provides future optionality for rooftop commercial, signage, or hospitality use.</div>
+      <div class="highlight-text">Terrace rights transfer with the property. An increasingly rare commodity in CP that gives the owner future optionality for rooftop commercial, signage, or hospitality use.</div>
     </div>
   </div>
 </section>
@@ -603,18 +653,18 @@
     <h2 class="section-title">Janpath, Connaught Place<br>New Delhi 110001</h2>
     <p class="section-body">Connaught Place is the central business district of New Delhi and the de facto commercial address of choice for Indian and multinational enterprises. Walking distance to Rajiv Chowk Metro, five-star hotels, embassies, and the diplomatic enclave.</p>
     <div class="location-tags">
-      <span class="location-tag">Rajiv Chowk Metro — 5 min walk</span>
-      <span class="location-tag">Lutyen's Delhi — adjacent</span>
-      <span class="location-tag">Shangri-La Hotel — neighbouring</span>
-      <span class="location-tag">Embassy zone — proximate</span>
-      <span class="location-tag">Parliament Street — 8 min</span>
+      <span class="location-tag">Rajiv Chowk Metro, 5 min walk</span>
+      <span class="location-tag">Lutyen's Delhi, adjacent</span>
+      <span class="location-tag">Shangri-La Hotel, neighbouring</span>
+      <span class="location-tag">Embassy zone, proximate</span>
+      <span class="location-tag">Parliament Street, 8 min</span>
     </div>
   </div>
   <div style="display: flex; flex-direction: column; justify-content: center; gap: 24px;">
-    <div style="border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; padding: 40px; text-align: center;">
-      <p style="font-family: var(--serif); font-size: 28px; font-weight: 300; color: #fff; line-height: 1.3; margin-bottom: 12px;">Interested? Let's talk.</p>
-      <p style="font-size: 14px; color: rgba(255,255,255,0.5); margin-bottom: 32px; line-height: 1.7;">Location details and full documentation shared privately with serious buyers. Reach out directly via WhatsApp to begin.</p>
-      <a href="https://wa.me/917982983624?text=I%20am%20interested%20in%20the%20Janpath%2C%20Connaught%20Place%20commercial%20property.%20Please%20share%20details." target="_blank" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: #25D366; color: #fff; font-family: var(--sans); font-size: 15px; font-weight: 500; padding: 16px 40px; border-radius: 4px; text-decoration: none; width: 100%; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">
+    <div style="border: 1px solid rgba(255,255,255,0.14); border-radius: 4px; padding: 44px; text-align: center;">
+      <p style="font-family: var(--serif); font-size: 30px; font-weight: 500; color: #fff; line-height: 1.3; margin-bottom: 14px;">Interested? Let's talk.</p>
+      <p style="font-size: 15px; font-weight: 400; color: rgba(255,255,255,0.6); margin-bottom: 36px; line-height: 1.75;">Location details and full documentation shared privately with serious buyers. Reach out directly via WhatsApp to begin a conversation.</p>
+      <a href="https://wa.me/917982983624?text=I%20am%20interested%20in%20the%20Janpath%2C%20Connaught%20Place%20commercial%20property.%20Please%20share%20details." target="_blank" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: #25D366; color: #fff; font-family: var(--sans); font-size: 15px; font-weight: 600; padding: 18px 40px; border-radius: 4px; text-decoration: none; width: 100%; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Message on WhatsApp
       </a>
@@ -626,7 +676,7 @@
 <section class="enquiry-section">
   <div class="enquiry-form">
     <p class="section-label">Private Enquiry</p>
-    <h2 class="section-title" style="font-size: 36px; margin-bottom: 24px;">Request information<br>or a site visit.</h2>
+    <h2 class="section-title" style="font-size: 38px; margin-bottom: 24px;">Request information<br>or a site visit.</h2>
 
     <div class="form-row">
       <div class="form-field">
@@ -647,11 +697,11 @@
     <div class="form-field">
       <label for="profile">Buyer Profile</label>
       <select id="profile" name="profile">
-        <option value="" disabled selected>Select your interest</option>
-        <option>Individual / Family Office</option>
+        <option value="" disabled selected>Select your profile</option>
+        <option>Individual or Family Office</option>
         <option>Corporate Buyer</option>
-        <option>Fund / Institutional</option>
-        <option>NRI / Overseas Investor</option>
+        <option>Fund or Institutional</option>
+        <option>NRI or Overseas Investor</option>
         <option>Other</option>
       </select>
     </div>
@@ -691,16 +741,28 @@
       <div class="info-block-sub">Exact address shared with verified serious buyers on request.</div>
     </div>
     <div class="info-block">
+      <div class="info-block-label">Exclusively Marketed By</div>
+      <div class="info-block-value">Hacoco</div>
+      <div class="info-block-sub"><a href="https://thehacoco.com" target="_blank" style="color: var(--terracotta); text-decoration: none;">thehacoco.com</a></div>
+    </div>
+    <div class="info-block">
       <div class="info-block-label">RERA Registration</div>
-      <div class="info-block-value" style="font-size: 16px; font-family: var(--sans); font-weight: 400;">DLRERA2026A00009</div>
-      <div class="info-block-sub"><a href="https://www.rera.delhi.gov.in/" target="_blank" style="color: var(--terracotta); text-decoration: none;">Verify on Delhi RERA →</a></div>
+      <div class="info-block-value" style="font-size: 16px; font-family: var(--sans); font-weight: 500;">DLRERA2026A00009</div>
+      <div class="info-block-sub"><a href="https://www.rera.delhi.gov.in/" target="_blank" style="color: var(--terracotta); text-decoration: none;">Verify on Delhi RERA</a></div>
     </div>
   </div>
 </section>
 
+<!-- HACOCO STRIP -->
+<div class="hacoco-strip">
+  <p>Exclusively marketed by</p>
+  <a href="https://thehacoco.com" target="_blank">Hacoco</a>
+  <p>Luxury Alternate Asset Brokerage</p>
+</div>
+
 <!-- FOOTER -->
 <footer>
-  <p>Janpath, Connaught Place, New Delhi 110001 &mdash; Private Family Sale</p>
+  <p>Janpath, Connaught Place, New Delhi 110001 &nbsp; Private Family Sale &nbsp; Exclusively marketed by Hacoco</p>
   <span class="rera-badge">RERA: DLRERA2026A00009</span>
 </footer>
 
@@ -731,7 +793,7 @@
     var email = document.getElementById('email').value.trim() || 'Not provided';
     var profile = document.getElementById('profile').value || 'Not specified';
     var message = document.getElementById('message').value.trim() || 'No message';
-    var text = 'Enquiry: Janpath, CP Commercial Property\n\nName: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nProfile: ' + profile + '\nMessage: ' + message;
+    var text = 'Enquiry via Hacoco: Janpath CP Commercial Property\n\nName: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nProfile: ' + profile + '\nMessage: ' + message;
     window.open('https://wa.me/917982983624?text=' + encodeURIComponent(text), '_blank');
   });
 </script>
