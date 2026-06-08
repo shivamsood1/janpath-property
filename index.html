@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Commercial Asset — Janpath, Connaught Place, New Delhi</title>
+<meta name="description" content="Rare freehold commercial building on Janpath Road, Connaught Place. G+4+Terrace, ~40,000 sq ft, fully leased to international tenants. Transaction-ready.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --sand: #F5F0E8;
+    --warm-white: #FDFBF7;
+    --terracotta: #C4724A;
+    --terracotta-light: #E8B89A;
+    --dark: #1A1714;
+    --mid: #6B6560;
+    --light-border: rgba(26,23,20,0.12);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--warm-white);
+    color: var(--dark);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 64px;
+    background: rgba(253,251,247,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--light-border);
+  }
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dark);
+    text-decoration: none;
+  }
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--dark);
+    color: #fff;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--terracotta); }
+
+  /* HERO */
+  .hero {
+    margin-top: 64px;
+    height: calc(100vh - 64px);
+    min-height: 560px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+  .hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    filter: brightness(0.72);
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(20,16,12,0.88) 0%, rgba(20,16,12,0.2) 55%, transparent 100%);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 60px 60px;
+    max-width: 900px;
+  }
+  .hero-label {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--terracotta-light);
+    margin-bottom: 20px;
+  }
+  .hero-title {
+    font-family: var(--serif);
+    font-size: clamp(42px, 6vw, 80px);
+    font-weight: 300;
+    line-height: 1.05;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  .hero-title em { font-style: italic; color: var(--terracotta-light); }
+  .hero-sub {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.72);
+    max-width: 480px;
+    line-height: 1.7;
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    background: var(--dark);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .stat {
+    padding: 28px 32px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat:last-child { border-right: none; }
+  .stat-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 8px;
+  }
+  .stat-value {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.1;
+  }
+  .stat-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+    margin-top: 4px;
+  }
+
+  /* SECTION LAYOUT */
+  section { padding: 100px 60px; }
+  .section-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--dark);
+    margin-bottom: 32px;
+  }
+  .section-body {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--mid);
+    line-height: 1.85;
+    max-width: 640px;
+  }
+
+  /* ABOUT */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .about-right img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+
+  /* GALLERY */
+  .gallery-section { background: var(--sand); padding: 100px 60px; }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 48px;
+  }
+  .gallery-grid img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  .gallery-grid img:hover { opacity: 0.88; }
+  .gallery-grid .wide {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
+  }
+
+  /* HIGHLIGHTS */
+  .highlights-section { padding: 100px 60px; }
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 56px;
+    border: 1px solid var(--light-border);
+  }
+  .highlight-item {
+    padding: 40px 36px;
+    border-right: 1px solid var(--light-border);
+    border-bottom: 1px solid var(--light-border);
+  }
+  .highlight-item:nth-child(3n) { border-right: none; }
+  .highlight-num {
+    font-family: var(--serif);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--terracotta);
+    margin-bottom: 16px;
+  }
+  .highlight-heading {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  .highlight-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--mid);
+    line-height: 1.75;
+  }
+
+  /* LOCATION */
+  .location-section {
+    background: var(--dark);
+    padding: 100px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .location-section .section-label { color: var(--terracotta-light); }
+  .location-section .section-title { color: #fff; }
+  .location-section .section-body { color: rgba(255,255,255,0.56); max-width: none; }
+  .location-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 32px;
+  }
+  .location-tag {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: rgba(255,255,255,0.6);
+    border: 1px solid rgba(255,255,255,0.16);
+    padding: 7px 16px;
+    border-radius: 2px;
+  }
+
+  /* ENQUIRY */
+  .enquiry-section {
+    background: var(--warm-white);
+    border-top: 1px solid var(--light-border);
+    padding: 100px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .enquiry-form { display: flex; flex-direction: column; gap: 16px; }
+  .form-field { display: flex; flex-direction: column; gap: 6px; }
+  .form-field label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--dark);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--light-border);
+    padding: 12px 0;
+    outline: none;
+    transition: border-color 0.2s;
+    -webkit-appearance: none;
+  }
+  .form-field input:focus,
+  .form-field select:focus,
+  .form-field textarea:focus { border-bottom-color: var(--dark); }
+  .form-field textarea { resize: vertical; min-height: 80px; }
+  .form-field select { cursor: pointer; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--dark);
+    color: #fff;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 8px;
+    text-decoration: none;
+    width: 100%;
+    transition: background 0.2s;
+  }
+  .submit-btn:hover { background: var(--terracotta); }
+  .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: transparent;
+    color: var(--dark);
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 14px 40px;
+    border: 1px solid var(--light-border);
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 8px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .whatsapp-btn:hover { border-color: var(--dark); background: var(--sand); }
+  .enquiry-info { padding-top: 8px; }
+  .info-block { margin-bottom: 40px; }
+  .info-block-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+  }
+  .info-block-value {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--dark);
+    line-height: 1.4;
+  }
+  .info-block-sub {
+    font-size: 13px;
+    color: var(--mid);
+    margin-top: 4px;
+  }
+  .disclaimer {
+    font-size: 11px;
+    color: rgba(107,101,96,0.7);
+    line-height: 1.7;
+    margin-top: 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--dark);
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  footer p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.36);
+  }
+  footer a {
+    color: rgba(255,255,255,0.36);
+    text-decoration: none;
+  }
+  footer a:hover { color: rgba(255,255,255,0.7); }
+  .rera-badge {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 6px 14px;
+    border-radius: 2px;
+  }
+
+  /* LIGHTBOX */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(10,8,6,0.95);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+  }
+  .lightbox.active { display: flex; }
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 24px; right: 32px;
+    font-size: 32px;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    line-height: 1;
+    background: none;
+    border: none;
+  }
+  .lightbox-close:hover { color: #fff; }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .hero-content { padding: 0 24px 40px; }
+    .hero-title { font-size: 38px; }
+    .stats-bar { grid-template-columns: 1fr 1fr; }
+    .stat:nth-child(5) { grid-column: span 2; border-right: none; }
+    section { padding: 72px 24px; }
+    .gallery-section { padding: 72px 24px; }
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-grid .wide { grid-column: span 2; }
+    .highlights-grid { grid-template-columns: 1fr; }
+    .highlight-item { border-right: none; }
+    .location-section { grid-template-columns: 1fr; gap: 48px; padding: 72px 24px; }
+    .enquiry-section { grid-template-columns: 1fr; gap: 48px; padding: 72px 24px; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 16px; text-align: center; padding: 32px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Janpath, Connaught Place</a>
+  <a class="nav-cta" href="https://wa.me/917982983624?text=I%20am%20interested%20in%20the%20Janpath%20commercial%20property.%20Please%20share%20details." target="_blank">
+    Enquire on WhatsApp
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="padding:0;">
+  <img class="hero-img" src="JP3.jpeg" alt="Prime commercial building, Janpath, Connaught Place, New Delhi">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-label">Rare Freehold Opportunity &mdash; Connaught Place, New Delhi</p>
+    <h1 class="hero-title">A landmark<br>on <em>Janpath</em>.</h1>
+    <p class="hero-sub">G+4+Terrace commercial building. ~40,000 sq ft. Fully leased. Original family ownership. Transaction-ready title.</p>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-label">Total Area</div>
+    <div class="stat-value">~40,000</div>
+    <div class="stat-sub">sq ft approx.</div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">Structure</div>
+    <div class="stat-value">G+4+T</div>
+    <div class="stat-sub">Ground + 4 Floors + Terrace</div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">Ownership</div>
+    <div class="stat-value">Freehold</div>
+    <div class="stat-sub">Original private family</div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">Occupancy</div>
+    <div class="stat-value">100%</div>
+    <div class="stat-sub">Internationally tenanted</div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">Lease Expiry</div>
+    <div class="stat-value">2027–32</div>
+    <div class="stat-sub">Staggered long-term leases</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <div class="about-grid">
+    <div>
+      <p class="section-label">The Asset</p>
+      <h2 class="section-title">Irreplaceable address.<br>Institutional quality.</h2>
+      <p class="section-body">
+        This property sits at the heart of Connaught Place — New Delhi's most sought-after commercial precinct and one of the highest-value commercial corridors in India. A substantial G+4 building with terrace rights, the property spans approximately 40,000 square feet across six usable levels, with a frontage facing Janpath Road.
+      </p>
+      <p class="section-body" style="margin-top: 20px;">
+        The building is fully leased to international tenants with staggered lease expiries running from 2027 through 2032, providing stable income visibility through transition. Title papers are clear with no conflict — the property has been in original family ownership since construction, making this a rare, direct-from-owner transaction.
+      </p>
+    </div>
+    <div class="about-right">
+      <img src="JP4.jpeg" alt="Building exterior, Janpath side view">
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<div class="gallery-section">
+  <p class="section-label">The Property</p>
+  <h2 class="section-title" style="max-width: 560px;">Contemporary fitouts.<br>Prime bones.</h2>
+  <div class="gallery-grid">
+    <img class="wide" src="JP8.jpeg" alt="Open plan office interior" onclick="openLightbox(this.src)">
+    <img src="JP2.jpeg" alt="Private cabin suite with glass partitions" onclick="openLightbox(this.src)">
+    <img src="JP5.jpeg" alt="Glass partition meeting room" onclick="openLightbox(this.src)">
+    <img src="JP7.jpeg" alt="Glass-partitioned office corridor" onclick="openLightbox(this.src)">
+    <img src="JP9.jpeg" alt="Boardroom with AV screen" onclick="openLightbox(this.src)">
+    <img src="JP6.jpeg" alt="Aerial view showing neighbouring Shangri-La" onclick="openLightbox(this.src)">
+  </div>
+</div>
+
+<!-- HIGHLIGHTS -->
+<section class="highlights-section">
+  <p class="section-label">Why This Property</p>
+  <h2 class="section-title">Six reasons serious<br>capital takes notice.</h2>
+  <div class="highlights-grid">
+    <div class="highlight-item">
+      <div class="highlight-num">01</div>
+      <div class="highlight-heading">Freehold title, original owners</div>
+      <div class="highlight-text">No chain, no litigation history, no ambiguity. Clear papers, transaction-ready from day one. Original family sellers with direct decision-making authority.</div>
+    </div>
+    <div class="highlight-item">
+      <div class="highlight-num">02</div>
+      <div class="highlight-heading">Connaught Place — first ring</div>
+      <div class="highlight-text">Janpath Road is Connaught Place's most active commercial spine. Supply of full-building freehold assets here is structurally near-zero. This is a once-in-a-generation acquisition opportunity.</div>
+    </div>
+    <div class="highlight-item">
+      <div class="highlight-num">03</div>
+      <div class="highlight-heading">100% leased, zero downtime risk</div>
+      <div class="highlight-text">Fully occupied with international-grade tenants. Rental income from day one of acquisition. Lease expiries running to 2032 provide the new owner a clear runway.</div>
+    </div>
+    <div class="highlight-item">
+      <div class="highlight-num">04</div>
+      <div class="highlight-heading">~40,000 sq ft across six levels</div>
+      <div class="highlight-text">Ground, first, second, third, fourth floors plus terrace — a substantial built-up footprint in a micro-market where individual floors routinely transact at significant premiums.</div>
+    </div>
+    <div class="highlight-item">
+      <div class="highlight-num">05</div>
+      <div class="highlight-heading">Janpath Road frontage</div>
+      <div class="highlight-text">Direct facing to Janpath Road provides exceptional visibility and vehicular access — a fundamental asset attribute that cannot be replicated by interior or service-lane properties.</div>
+    </div>
+    <div class="highlight-item">
+      <div class="highlight-num">06</div>
+      <div class="highlight-heading">Terrace rights included</div>
+      <div class="highlight-text">Terrace rights transfer with the property — an increasingly rare commodity in CP that provides future optionality for rooftop commercial, signage, or hospitality use.</div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<div class="location-section">
+  <div>
+    <p class="section-label">Location</p>
+    <h2 class="section-title">Janpath, Connaught Place<br>New Delhi 110001</h2>
+    <p class="section-body">Connaught Place is the central business district of New Delhi and the de facto commercial address of choice for Indian and multinational enterprises. Walking distance to Rajiv Chowk Metro, five-star hotels, embassies, and the diplomatic enclave.</p>
+    <div class="location-tags">
+      <span class="location-tag">Rajiv Chowk Metro — 5 min walk</span>
+      <span class="location-tag">Lutyen's Delhi — adjacent</span>
+      <span class="location-tag">Shangri-La Hotel — neighbouring</span>
+      <span class="location-tag">Embassy zone — proximate</span>
+      <span class="location-tag">Parliament Street — 8 min</span>
+    </div>
+  </div>
+  <div style="display: flex; flex-direction: column; justify-content: center; gap: 24px;">
+    <div style="border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; padding: 40px; text-align: center;">
+      <p style="font-family: var(--serif); font-size: 28px; font-weight: 300; color: #fff; line-height: 1.3; margin-bottom: 12px;">Interested? Let's talk.</p>
+      <p style="font-size: 14px; color: rgba(255,255,255,0.5); margin-bottom: 32px; line-height: 1.7;">Location details and full documentation shared privately with serious buyers. Reach out directly via WhatsApp to begin.</p>
+      <a href="https://wa.me/917982983624?text=I%20am%20interested%20in%20the%20Janpath%2C%20Connaught%20Place%20commercial%20property.%20Please%20share%20details." target="_blank" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: #25D366; color: #fff; font-family: var(--sans); font-size: 15px; font-weight: 500; padding: 16px 40px; border-radius: 4px; text-decoration: none; width: 100%; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.88'" onmouseout="this.style.opacity='1'">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Message on WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ENQUIRY -->
+<section class="enquiry-section">
+  <div class="enquiry-form">
+    <p class="section-label">Private Enquiry</p>
+    <h2 class="section-title" style="font-size: 36px; margin-bottom: 24px;">Request information<br>or a site visit.</h2>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-field">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 98xxx xxxxx" required>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com">
+    </div>
+
+    <div class="form-field">
+      <label for="profile">Buyer Profile</label>
+      <select id="profile" name="profile">
+        <option value="" disabled selected>Select your interest</option>
+        <option>Individual / Family Office</option>
+        <option>Corporate Buyer</option>
+        <option>Fund / Institutional</option>
+        <option>NRI / Overseas Investor</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="message">Message (optional)</label>
+      <textarea id="message" name="message" placeholder="Any specific questions or requirements..."></textarea>
+    </div>
+
+    <a id="wa-form-btn" class="submit-btn" href="#" target="_blank">
+      Send Enquiry via WhatsApp
+    </a>
+
+    <a class="whatsapp-btn" href="https://wa.me/917982983624?text=I%20am%20interested%20in%20the%20Janpath%20commercial%20property.%20Please%20share%20further%20details." target="_blank">
+      Direct WhatsApp Message
+    </a>
+
+    <p class="disclaimer">
+      This is a private, off-market opportunity. All enquiries are treated with strict confidentiality. Detailed financials and title documents shared only with verified serious buyers under NDA.
+    </p>
+  </div>
+
+  <div class="enquiry-info">
+    <div class="info-block">
+      <div class="info-block-label">Ownership Type</div>
+      <div class="info-block-value">Freehold</div>
+      <div class="info-block-sub">Original private family owners. No intermediary ownership.</div>
+    </div>
+    <div class="info-block">
+      <div class="info-block-label">Title Status</div>
+      <div class="info-block-value">Clear &amp; Transaction-Ready</div>
+      <div class="info-block-sub">No disputes, no litigation, no encumbrance. Full documentation available for due diligence.</div>
+    </div>
+    <div class="info-block">
+      <div class="info-block-label">Location</div>
+      <div class="info-block-value">Janpath, Connaught Place<br>New Delhi 110001</div>
+      <div class="info-block-sub">Exact address shared with verified serious buyers on request.</div>
+    </div>
+    <div class="info-block">
+      <div class="info-block-label">RERA Registration</div>
+      <div class="info-block-value" style="font-size: 16px; font-family: var(--sans); font-weight: 400;">DLRERA2026A00009</div>
+      <div class="info-block-sub"><a href="https://www.rera.delhi.gov.in/" target="_blank" style="color: var(--terracotta); text-decoration: none;">Verify on Delhi RERA →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Janpath, Connaught Place, New Delhi 110001 &mdash; Private Family Sale</p>
+  <span class="rera-badge">RERA: DLRERA2026A00009</span>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+  <img id="lightbox-img" src="" alt="Property photo enlarged">
+</div>
+
+<script>
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  document.getElementById('wa-form-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    var name = document.getElementById('fname').value.trim() || 'Not provided';
+    var phone = document.getElementById('phone').value.trim() || 'Not provided';
+    var email = document.getElementById('email').value.trim() || 'Not provided';
+    var profile = document.getElementById('profile').value || 'Not specified';
+    var message = document.getElementById('message').value.trim() || 'No message';
+    var text = 'Enquiry: Janpath, CP Commercial Property\n\nName: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nProfile: ' + profile + '\nMessage: ' + message;
+    window.open('https://wa.me/917982983624?text=' + encodeURIComponent(text), '_blank');
+  });
+</script>
+</body>
+</html>
